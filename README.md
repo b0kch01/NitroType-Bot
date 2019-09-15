@@ -6,6 +6,7 @@ Thanks Google for tesseract
 
 ## How to use
 
+```
 (Mouse on top left corner)
 [press 1]-----------------------
 
@@ -21,6 +22,7 @@ Thanks Google for tesseract
 
 |----------------------[press 2]
   (mouse on bottom right corner)
+```
 
 - Press [ESC]
 - [Ctrl + C] or [ESC] to stop
