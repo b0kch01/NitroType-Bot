@@ -40,3 +40,7 @@ Thanks Google for tesseract
 
 Also, make sure you have tesseract installed with PATH added
 https://github.com/tesseract-ocr/tesseract
+
+## Compatibility
+For now, only works on Windows Machines
+- Tested on 1440p
