@@ -9,17 +9,11 @@ Thanks Google for tesseract
 ```
 (Mouse on top left corner)
 [press 1]-----------------------
-
-|	     Cover the whole	   |
-
-|	     textbox 			   |
-
-|	     for the best 		   |
-
-|	     result!		       |
-
-|	     Happy Racing!	       |
-
+|        Cover the whole       |
+|        textbox               |
+|        for the best          |
+|        result!               |
+|        Happy Racing!         |
 |----------------------[press 2]
   (mouse on bottom right corner)
 ```
