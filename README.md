@@ -30,3 +30,13 @@ Thanks Google for tesseract
 ## Notes
 - The bot uses image recognition, so make sure nothing blocks the text!
 - The CAPS lock pop-up warning has messed up results before (watch out!)
+
+## Installation
+- Run with python 3
+- Make sure to have these installed with pip:
+	1. pyautogui
+	2. pytesseract
+	3. keyboard
+
+Also, make sure you have tesseract installed with PATH added
+https://github.com/tesseract-ocr/tesseract
