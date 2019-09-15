@@ -18,7 +18,7 @@ Thanks Google for tesseract
 ```
 
 - Press [ESC]
-- [Ctrl + C] or [ESC] to stop
+- [Ctrl + C] or hold [ESC] to stop
 
 
 ## Controls: 
