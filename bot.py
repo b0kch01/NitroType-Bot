@@ -24,6 +24,7 @@ import pyautogui # Mouse position
 import pytesseract # ML Algorithm to detect language in image
 import keyboard # Emulating Input
 import time # Time controlling
+import platform # Cross-Platform Capatbillity
 
 print("Nitro Type Bot by b0kch01\nEnjoy! :)\n")
 
@@ -37,6 +38,9 @@ def get_box():
 
 # Store the coordinates into global varibles
 x1, y1, x2, y2 = get_box()
+if platform.system() == "Darwin":
+	x2 *= 2
+	y2 *= 2
 keyboard.wait("esc") # Wait for [esc] until proceeeding
 time.sleep(1)
 
@@ -49,7 +53,7 @@ while (not keyboard.is_pressed("esc")):
 	# Get text from the image_to_string model and remove new lines
 	text = pytesseract.image_to_string(image, lang="eng").replace("\n", "")
 	# Write the text from tesseract
-	keyboard.write(text)
+	keyboard.write(text, delay=0)
 	# Add delay to control WPM speeds!
 	time.sleep(DELAY)
 
