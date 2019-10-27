@@ -17,15 +17,11 @@ Thanks Google for tesseract
   (mouse on bottom right corner)
 ```
 
-- Press [ESC]
-- [Ctrl + C] or hold [ESC] to stop
-
-
 ## Controls: 
 1. [1] to set first mouse coordinate, [2] to set the second.
 2. After coordinates are set, press [esc] to start! 			
 3. There is a 1 second delay before the bot starts	
-4. To stop the typing, press [esc]
+4. To stop the typing, hold [esc]
 
 ## Notes
 - The bot uses image recognition, so make sure nothing blocks the text!
@@ -37,6 +33,7 @@ Thanks Google for tesseract
 	1. pyautogui
 	2. pytesseract
 	3. keyboard
+	4. Pillow
 
 Also, make sure you have tesseract installed with PATH added
 https://github.com/tesseract-ocr/tesseract
@@ -44,3 +41,5 @@ https://github.com/tesseract-ocr/tesseract
 ## Compatibility
 - macOS: Works but it's slow
 - Windows 10: Works well
+
+- Slow computers beware.
