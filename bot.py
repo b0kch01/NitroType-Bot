@@ -1,21 +1,6 @@
 # Nitro Type bot by b0kch01
 # Thanks Google for tesseract
 
-# [press 1]-----------------------
-# |	     Cover the whole         |
-# |	     textbox                 |
-# |	     for the best            |
-# |	     result!                 |
-# |	     Happy Racing!           |
-# |----------------------[press 2]
-
-
-# Controls: 1 to set first mouse coordinate, 2 to set the second.
-# 			After coordinates are set, press [esc] to start! 
-#			There is a 1 second delay before the bot starts	
-# 			To stop the typing, hold [esc]
-
-
 # Important Libraries
 from PIL import Image, ImageGrab # Image processing, Screenshoting
 from pynput.keyboard import Key, Listener
@@ -59,8 +44,8 @@ try :
 	print("\n\nPress [Esc] at the last yellow light")
 
 	keyboard.wait("esc") # Wait for [esc] until proceeeding
-	time.sleep(1
-)
+	print("Wait a second...")
+	time.sleep(1)
 	# Main Typing bot
 	print("And it's off!")
 
