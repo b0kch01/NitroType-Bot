@@ -63,7 +63,7 @@ try:
     print("And it's off!")
 
     text = ""
-    while (not (keyboard.is_pressed("esc")):
+    while not keyboard.is_pressed("esc"):
         # Take the screen shot, given box coordinates.
         # Convert to grayscale image for better accuracy from tesseract
         image=ImageGrab.grab(bbox=(x1, y1, x2, y2)).convert("LA")
