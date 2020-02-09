@@ -37,7 +37,7 @@ to ```PATH```
 ```
 # Installation
 - **Important:** make sure you have _Google Tesseract_ installed with PATH added
-https://github.com/tesseract-ocr/tesseract
+https://tesseract-ocr.github.io/tessdoc/Home.html
 - Windows:
     - Run latest executable from the <a href="https://github.com/B0kCh01/NitroType-Bot/releases/latest">releases section</a>
 - MacOS (**Warning:** don't run unless you know what you are doing!):
