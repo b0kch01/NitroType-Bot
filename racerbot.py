@@ -1,6 +1,26 @@
 # Nitro Type bot by b0kch01
 # Thanks Google for tesseract
 
+def compat_check():
+    print("Checking for compatibility...")
+    from sys import platform
+    import os
+
+    if (platform == "linux"):
+        print("(Unsupported OS): Anything beyond this point might go crazy...")
+        input("Ok? ")
+    elif (platform == "darwin"):
+        if os.getuid() != 0:
+            print("Not adminstrator: It's needed to emulate keyboard on macOS")
+            elevate()
+        if os.getuid() == 0:
+            print("Success!")
+        else:
+            print("Couldn't get administrator priveledges :(")
+            input("rip. press [Enter] to close this app.")
+            close(0)
+    os.system("cls()" if "win" in platform else "clear()")
+
 print("Checking for dependencies...")
 
 try:
