@@ -51,7 +51,7 @@ https://github.com/tesseract-ocr/tesseract
 3. There is a 1 second delay before the bot starts
 4. To stop the typing, hold [esc]
 
-## Manual
+## Manual (coming-soon)
 1. Use [1] and [2] to set capture boundaries
 2. Hold [esc] when you want to bot to run
 3. Release [esc] to pause the bot
