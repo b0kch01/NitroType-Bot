@@ -1,16 +1,17 @@
 # Nitro Type bot by b0kch01
 # Thanks Google for tesseract
 
-print("Nitro Type Bot by b0kch01\n\n")
 print("Checking for dependencies...")
 
 try:
     # Important Libraries
-    from box import Box
+    from pyfiglet import Figlet
+    from screenbox import Box
     from PIL import Image, ImageGrab  # Image processing, Screenshoting
     import pytesseract  # ML Library to detect words in image
     import keyboard  # fast keyboard emulating
     import time  # Loop control, delays
+    print("Successfuly imported!\n")
 except:
     print("Error: Could not import modules")
     print("Please check to:")
@@ -18,8 +19,14 @@ except:
     print("\t2) Other modules are installed with pip")
     exit()
 
-print("Remember, hold [esc] to formally exit the bot")
-print("Enjoy! :)")
+f = Figlet(font="doom")
+print(f.renderText("NitroType-Bot"))
+print("Created with ❤ by b0kch01!")
+print("Google Tesseract by Google!")
+print("============================")
+
+print("Remember, hold [esc] to exit the bot")
+print("- Enjoy! :)\n")
 
 
 def isfloat(number):
@@ -32,12 +39,13 @@ def isfloat(number):
 
 try:
     # Set delay (seconds)
-    delay = input("Set the bot delay in seconds (0 is bannable, 4 is not) >")
+    delay = input("Guess delay in seconds >")
     while (not isfloat(delay)):
         delay = input("Sorry, I don't think that was in seconds (try again) >")
 
     # Store the coordinates
-    x1, y1, x2, y2 = get_box()
+    thisbox = Box()
+    x1, y1, x2, y2 = thisbox.get_box()
 
     print("\n[ Summary ]\n------------>")
     print("Delay: " + delay)
@@ -64,10 +72,6 @@ try:
 
 except KeyboardInterrupt:
     print("\n\nexited with KeyboardInterrupt")
-
-except:
-    print("An unexpected error occurred :(")
-    print("")
 
 # Done with code
 exit()
