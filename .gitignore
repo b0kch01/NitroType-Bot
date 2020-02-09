@@ -1,3 +1,4 @@
 testscripts
+__pycache__
 botcode
 *.egg-info
