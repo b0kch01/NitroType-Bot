@@ -1,4 +1,4 @@
 # Ignore build/beta stuff
-scripts_test
 build
+scripts_test
 *.egg-info
