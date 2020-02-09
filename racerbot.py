@@ -14,14 +14,14 @@ try:
     import keyboard  # Fast keyboard emulating
     import time  # Loop control, delays
 
-    colorama.init()
+    colorama.init()  # Legacy console fix for color
     print("Successfuly imported!\n")
 except:
     print("Error: Could not import modules")
     print("Please check to:")
     print("\t1) Tesseract installed with correct PATH")
     print("\t2) Other modules are installed with pip")
-    exit()
+    exit(0)
 
 
 def titlescreen():
@@ -85,13 +85,14 @@ def start_bot():
         print("Oh No! Something went terribly wrong!")
         print("Create an issue on GitHub and I'll try to fix it :)")
 
-    cprint("\nRaced to the finish line!", "green")
-
 
 def prompt_continue():
     f = Figlet(font="doom")
-    print(f.renderText("Zoom!"))
-    return input("Would you like to continue? >").lower() in "yes!yea!ya!"
+    print(f.renderText("\nExit?"))
+    try:
+        return input("Would you like to continue? >").lower() in "yes!yea!ya!"
+    except KeyboardInterrupt:
+        return prompt_continue()
 
 
 if __name__ == "__main__":
@@ -101,3 +102,4 @@ if __name__ == "__main__":
         if not prompt_continue():
             break
     print("Bye!")
+    sleep(2)
