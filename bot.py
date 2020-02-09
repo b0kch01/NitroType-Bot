@@ -6,10 +6,10 @@ print("Checking for dependencies...")
 
 try:
     # Important Libraries
+    from box import Box
     from PIL import Image, ImageGrab  # Image processing, Screenshoting
-    import pyautogui  # Mouse position
     import pytesseract  # ML Library to detect words in image
-    import keyboard  # Emulating input
+    import keyboard  # fast keyboard emulating
     import time  # Loop control, delays
 except:
     print("Error: Could not import modules")
@@ -28,17 +28,6 @@ def isfloat(number):
         return True
     except ValueError:
         return False
-
-
-# This method returns coordinates of mouse
-def get_box():
-    print("\nPress [1] when cursor is on the upper-left corner of the text box")
-    while(not keyboard.is_pressed("1")):
-        coord1 = pyautogui.position()
-    print("Press [2] when cursor is on the lower-right corner of the text box")
-    while(not keyboard.is_pressed("2")):
-        coord2 = pyautogui.position()
-    return (coord1.x, coord1.y, coord2.x, coord2.y)
 
 
 try:
@@ -63,12 +52,12 @@ try:
     print("And it's off!")
 
     text = ""
-    while (not (keyboard.is_pressed("esc")):
+    while not keyboard.is_pressed("esc"):
         # Take the screen shot, given box coordinates.
         # Convert to grayscale image for better accuracy from tesseract
-        image=ImageGrab.grab(bbox=(x1, y1, x2, y2)).convert("LA")
+        image = ImageGrab.grab(bbox=(x1, y1, x2, y2)).convert("LA")
         # Get text from the image_to_string model and remove new lines
-        text=pytesseract.image_to_string(image, lang="eng").replace("\n", "")
+        text = pytesseract.image_to_string(image, lang="eng").replace("\n", "")
         # Write the text from tesseract
         keyboard.write(text)
         time.sleep(float(delay))
@@ -77,8 +66,8 @@ except KeyboardInterrupt:
     print("\n\nexited with KeyboardInterrupt")
 
 except:
-	print("An unexpected error occurred :(")
-	print("")
+    print("An unexpected error occurred :(")
+    print("")
 
 # Done with code
 exit()
