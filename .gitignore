@@ -1,4 +1,4 @@
-testscripts
-__pycache__
-botcode
+# Ignore build/beta stuff
+scripts_test
+build
 *.egg-info

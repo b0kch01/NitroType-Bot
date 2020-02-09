@@ -38,11 +38,14 @@ to ```PATH```
 # Installation
 - **Important:** make sure you have _Google Tesseract_ installed with PATH added
 https://github.com/tesseract-ocr/tesseract
-- Run with Python 3
-- Make sure to have these installed with pip:
-    ```
-    python -m pip install pyautogui pytesseract keyboard Pillow
-    ```
+- Windows:
+    - Run latest executable from the <a href="https://github.com/B0kCh01/NitroType-Bot/releases/latest">releases section</a>
+- MacOS (**Warning:** don't run unless you know what you are doing!):
+    - Run with Python 3
+    - Make sure to have these modules installed with pip:
+        ```
+        python3 -m pip install pyautogui pytesseract keyboard
+        ```
 
 # Controls
 ## Automatic
@@ -69,7 +72,9 @@ That includes, but not limited to:
 Also,
 
 ## Compatibility
-- macOS: Works but keyboard emulating is per key type
-- Windows 10: Works well
+- Windows 10: Works well (.exe recommended)
+- MacOS: (**Executable in development**)
+    - Again, **only run** if you know what you are doing!
+    - ```sudo python racerbot.py``` (You need admin privileges to emulate keystrokes)
 
-- Slow computers beware.
+- Slow computers _beware._
