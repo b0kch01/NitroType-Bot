@@ -102,4 +102,4 @@ if __name__ == "__main__":
         if not prompt_continue():
             break
     print("Bye!")
-    sleep(2)
+    time.sleep(2)
